@@ -1,6 +1,6 @@
 <h1 align="center">Летняя школа СПбГУ</h1>
 <p align="center">
-<img src="learn-programming.webp" alt="logo">
+<img src="assets/learn-programming.webp" alt="logo">
 </p>
 <p align="center">
 <img alt="Static Badge" src="https://img.shields.io/badge/node.js-v18.16.1-%23339933?style=for-the-badge&logo=nodedotjs&logoColor=%23339933">
@@ -13,6 +13,12 @@
 </p>
 
 ---
+
+## Архитектура проекта
+
+<p align="center">
+<img src="assets/architecture.png" alt="logo">
+</p>
 
 ## Использование
 
@@ -28,11 +34,13 @@
 ## Техническое описание проекта
 
 ### Использование Sass в WebStorm:<br>
+
 `File > Settings`, в открывшемся окошке перейти в раздел `Tools > File Watchers`, нажать на зеленый плюсик справа и
 выбрать
 `Sass\SCSS`.
 
 ### Использование TypeScript в WebStorm:<br>
+
 Достаточно создать файл с расширением `.ts`. Для транспиляции TypeScript в JavaScript надо прописать в
-терминале `tsc ${путь до файла}`. Чтобы настроить свою конфигурацию в терминал надо прописать `tsc --init`, появится
+терминале `tsc ${путь до файла}`. Чтобы настроить свою конфигурацию, в терминал надо прописать `tsc --init`, появится
 файл `tsconfig.json`, в котором можно выставить свои настройки.
