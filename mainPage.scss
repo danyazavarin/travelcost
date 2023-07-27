@@ -1,0 +1,52 @@
+$primary: #ffffff;
+$secondary-bg: #F8F8F9;
+$secondary-color: #BF271B;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+  font-style: normal;
+  background: $primary;
+}
+
+.main-banner {
+  background: url("assets/bg.png") no-repeat;
+  background-size: cover;
+  height: 481px;
+  border-radius: 0 0 20px 20px;
+}
+
+.main-banner__header {
+  position: relative;
+  top: 31px;
+  margin: 0 22px;
+  border-radius: 12px;
+  background: $primary;
+  opacity: 0.95;
+  box-shadow: 0 0 20px 0 rgba(199, 199, 199, 0.16);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-banner__logo {
+  margin: 20px;
+  height: 26px;
+}
+
+.main-banner__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.main-banner__search {
+  margin: 7px 10px;
+  height: 54px;
+}
