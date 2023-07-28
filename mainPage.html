@@ -12,25 +12,232 @@
     <title>Cargotime</title>
 </head>
 <body>
-<section class="main-banner">
-    <header class="main-banner__header">
-        <div class="main-banner__logo">
-            <img src="assets/logo.png" alt="logo">
+<header class="banner">
+    <nav class="banner__nav">
+        <div class="banner__logo">
+            <a href="https://cargotime.ru/"><img src="assets/black_logo.png" alt="logo"></a>
         </div>
-        <ul class="main-banner__list">
-            <li class="active"><a href="#">Трекинг контейнеров</a></li>
-            <li><a href="#">Перевозчики</a></li>
-            <li><a href="#">Калькулятор доставки</a></li>
-            <li><a href="#">Трекинг посылок</a></li>
-            <li><a href="#">Калькулятор поездки</a></li>
-            <li><a href="#">Полезное</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
-        <div class="main-banner__search">
-            <img src="assets/search.png" alt="search">
+        <div class="banner__hero">
+            <ul class="banner__list">
+                <li><a href="https://cargotime.ru/tracking/">Трекинг контейнеров</a></li>
+                <li><a href="https://cargotime.ru/truckers/">Перевозчики</a></li>
+                <li><a href="https://cargotime.ru/calc/">Калькулятор доставки</a></li>
+                <li><a href="https://cargotime.ru/parcels/">Трекинг посылок</a></li>
+                <li><a href="https://cargotime.ru/travelcost/">Калькулятор поездки</a></li>
+                <li><a href="https://cargotime.ru/useful/">Полезное</a></li>
+                <li><a href="https://cargotime.ru/news/">Новости</a></li>
+                <li><a href="https://cargotime.ru/contacts/">Контакты</a></li>
+            </ul>
+            <div class="banner__search">
+                <img src="assets/search.png" alt="search">
+            </div>
         </div>
-    </header>
+    </nav>
+    <div class="banner__title">
+        <p class="banner__breadcrumps">Главная - Калькулятор доставки</p>
+        <div class="banner__text">
+            <p class="banner__text1">Калькулятор стоимости поездки на машине</p>
+            <p class="banner__text2">Помогаем построить маршрут поездки на машине<br> с указанием точек дозаправки
+                таким образом,<br> чтобы общая стоимость поездки была минимальной</p>
+        </div>
+    </div>
+    <div class="banner__small">
+        <div class="banner__mockup">
+            <img src="assets/img_mockup.png" alt="mockup">
+        </div>
+        <div class="banner__details">
+            <p class="banner__question">Как это работает?</p>
+            <div class="banner__btn">
+                <p class="banner__more"><a href="https://cargotime.ru/">Подробнее</a></p>
+                <svg width="29" height="8" viewBox="0 0 29 8" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.3535 4.35355C28.5488 4.15829 28.5488 3.84171 28.3535 3.64645L25.1716 0.464466C24.9763 0.269204 24.6597 0.269204 24.4645 0.464466C24.2692 0.659728 24.2692 0.976311 24.4645 1.17157L27.2929 4L24.4645 6.82843C24.2692 7.02369 24.2692 7.34027 24.4645 7.53553C24.6597 7.7308 24.9763 7.7308 25.1716 7.53553L28.3535 4.35355ZM0.36969 4.5H28V3.5H0.36969V4.5Z"
+                          fill="#707070"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="calculator">
+    <div class="calculator__hero">
+        <p class="calculator__tab">Расчет стоимости поездки</p>
+        <div class="calculator__main">
+            <div class="calculator__form">
+                <label for="departure">Точка отправления:<br>
+                    <input type="text" id="departure" name="departure" class="">
+                </label>
+                <label for="arrival">Точка прибытия:<br>
+                    <input type="text" id="arrival" name="arrival" class="">
+                </label>
+                <label>
+                    <input type="text">
+                </label>
+                <label>
+                    <input type="text">
+                </label>
+                <label>
+                    <input type="text">
+                </label>
+                <label>
+                    <input type="text">
+                </label>
+            </div>
+            <img src="assets/map.png" alt="map">
+        </div>
+    </div>
+</main>
+<section class="about">
+    <div class="about__main">
+        <div class="about__topic">
+            <p class="about__question">Как это работает?</p>
+            <img src="assets/element_line.svg" alt="line">
+        </div>
+        <div class="about__hero">
+            <div class="about__cards">
+                <div class="about__card">
+                    <div class="about__content">
+                        <div class="about__top">
+                            <div class="about__number">01.</div>
+                            <img src="assets/circles.svg" alt="circles">
+                        </div>
+                        <div class="about__info">
+                            <div class="about__title">Вы указываете данные о маршруте</div>
+                            <div class="about__text">На их основании наш алгоритм строит маршрут с использованием данных
+                                с Яндекс.карт
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <div class="about__content">
+                        <div class="about__top">
+                            <div class="about__number">02.</div>
+                            <img src="assets/circles.svg" alt="circles">
+                        </div>
+                        <div class="about__info">
+                            <div class="about__title">Мы анализируем цены топлива на маршруте</div>
+                            <div class="about__text">Если обнаруживаются скачки цен, то он разбивается на участки со
+                                схожими ценами
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <div class="about__content">
+                        <div class="about__top">
+                            <div class="about__number">03.</div>
+                            <img src="assets/circles.svg" alt="circles">
+                        </div>
+                        <div class="about__info">
+                            <div class="about__title">Разбиваем ваш маршрут на участки</div>
+                            <div class="about__text">Каждый участок вы сможете проехать без дозаправки на одном баке
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <div class="about__content">
+                        <div class="about__top">
+                            <div class="about__number">04.</div>
+                            <img src="assets/circles.svg" alt="circles">
+                        </div>
+                        <div class="about__info">
+                            <div class="about__title">Находим оптимальные точки дозаправки</div>
+                            <div class="about__text">Выявляем заправочные станции, воспользоваться которыми оптимально с
+                                точки зрения стоимости топлива
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <div class="about__content">
+                        <div class="about__top">
+                            <div class="about__number">05.</div>
+                            <img src="assets/circles.svg" alt="circles">
+                        </div>
+                        <div class="about__info">
+                            <div class="about__title">Находим оптимальные точки дозаправки</div>
+                            <div class="about__text">Выявляем заправочные станции, воспользоваться которыми оптимально с
+                                точки зрения стоимости топлива
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__more">
+                    <img src="assets/icon_section.svg" alt="icon">
+                    <p class="about__label"><a href="#">Узнать больше<br>об алгоритме расчета</a></p>
+                </div>
+            </div>
+            <img src="assets/img_section.png" alt="img">
+        </div>
+    </div>
 </section>
+<section class="advantages">
+    <div class="advantages__hero">
+        <div class="advantages__circles"><img src="assets/big_circles.svg" alt="circles"></div>
+        <div class="advantages__text">
+            <p class="advantages__topic">Наши преимущества:</p>
+            <div class="advantages__list">
+                <div class="advantages__line">
+                    <img src="assets/bullet_icon.svg" alt="bullet">
+                    <p>Абсолютно бесплатно</p>
+                </div>
+                <div class="advantages__line">
+                    <img src="assets/bullet_icon.svg" alt="bullet">
+                    <p>Не требуется регистрироваться или заполнять иные формы</p>
+                </div>
+                <div class="advantages__line">
+                    <img src="assets/bullet_icon.svg" alt="bullet">
+                    <p>Прост в использовании — нужно только ввести номер контейнера, сервис сам определит, кто
+                        осуществляет транспортировку и выведет найденную информацию</p>
+                </div>
+                <div class="advantages__line">
+                    <img src="assets/bullet_icon.svg" alt="bullet">
+                    <p>Если в пути находятся несколько контейнеров разных компаний, то их расположение можно отследить в
+                        одном месте — здесь</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__hero">
+        <div class="footer__main">
+            <div class="footer__description">
+                <img src="assets/white_logo.svg" alt="logo">
+                <p class="footer__text">Единая грузовая служба — это проект, цель которого объединить профессиональных
+                    логистов, крупных перевозчиков и частных клиентов в общем намерении взаимовыгодно сотрудничать друг
+                    с другом.<br><br>Для этого на портале собраны крупные, актуальные, регулярно пополняемые каталоги
+                    компаний, представляющих услуги в области перевозки грузов.<br><br> Мы каждый день работаем над тем,
+                    чтобы пользоваться этими каталогами было максимально удобно.
+                </p>
+            </div>
+            <img src="assets/divider.svg" alt="divider">
+            <div class="footer__menu">
+                <p class="footer__topic">Меню</p>
+                <div class="footer__list">
+                    <ul class="footer__list1">
+                        <li><a href="#">Трекинг контейнеров</a></li>
+                        <li><a href="#">Трекинг посылок</a></li>
+                        <li><a href="#">Калькулятор доставки</a></li>
+                        <li><a href="#">Калькулятор поездки</a></li>
+                    </ul>
+                    <ul class="footer__list2">
+                        <li><a href="#">Перевозчики</a></li>
+                        <li><a href="#">Полезное</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer__more">
+            <div class="footer__contact">
+                <p class="footer__title">Связаться с нами</p>
+                <p class="footer__address"><a href="#">info@cargotime.ru</a></p>
+            </div>
+            <div class="footer__date">2020-2022</div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
