@@ -1,0 +1,8 @@
+{
+  "name": "cheapest_route_algo",
+  "type": "module",
+  "version": "1.0.0",
+  "devDependencies": {
+    "axios": "^1.5.0"
+  }
+}
