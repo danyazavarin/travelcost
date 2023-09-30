@@ -196,25 +196,52 @@ body {
 }
 
 .calculator__form {
-  width: 470px;
   @include display(flex-start, flex-start);
   flex-direction: column;
-  gap: 10px;
+  width: 470px;
   margin: 20px 60px 38px 38px;
+  gap: 23px;
+}
+
+.calculator__menu {
+  @include display(normal, normal);
+  flex-direction: column;
+  gap: 10px;
+}
+
+.calculator__dropdown {
+  @include display(normal, normal);
+  width: 300px;
+  gap: 10px;
 
   label {
+    @include display(flex-start, flex-start);
+    flex-direction: column;
+    gap: 4px;
+    font-variant-numeric: lining-nums proportional-nums;
     @include font(12, 400);
+    color: #707070;
     line-height: 120%;
-    opacity: 0.5;
   }
 
   input {
-    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    height: 12px;
+    padding: 17px 20px;
+    align-self: stretch;
+    @include font(16, 500);
+    color: $primary-color;
+    line-height: normal;
+
+    &:disabled {
+      background: #F5F5F5;
+    }
+    &:active {
+      border-color: $secondary-color;
+    }
   }
 }
-
-
-
 
 .about {
   background: $primary-bg;

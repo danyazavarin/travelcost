@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="mainPage.css">
-    <title> Cargotime </title>
+    <title> Калькулятор доставки - Единая грузовая служба </title>
 </head>
 <body>
 <header class="banner">
@@ -61,26 +61,48 @@
     <div class="calculator__hero">
         <p class="calculator__tab">Расчет стоимости поездки</p>
         <div class="calculator__main">
-            <div class="calculator__form">
-                <label for="departure">Точка отправления:<br>
-                    <input type="text" id="departure" name="departure" class="">
-                </label>
-                <label for="arrival">Точка прибытия:<br>
-                    <input type="text" id="arrival" name="arrival" class="">
-                </label>
-                <label>
-                    <input type="text">
-                </label>
-                <label>
-                    <input type="text">
-                </label>
-                <label>
-                    <input type="text">
-                </label>
-                <label>
-                    <input type="text">
-                </label>
-            </div>
+            <form action="#" method="post" class="calculator__form">
+                <div class="calculator__menu">
+                    <div class="calculator__dropdown">
+                        <label for="departure">Точка отправления:<br>
+                            <input type="text" id="departure" name="departure" value="Санкт-Петербург, 3-я ул. Строителей, 24">
+                        </label>
+                    </div>
+                    <div class="calculator__dropdown">
+                        <label for="arrival">Точка прибытия:<br>
+                            <input type="text" id="arrival" name="arrival" value="Москва, 3-я ул. Строителей, 24">
+                        </label>
+                    </div>
+                    <div class="calculator__dropdown">
+                        <label for="type">Тип топлива:
+                            <input type="text" id="type" name="type" placeholder="АИ-95" disabled>
+                        </label>
+                        <label for="average">Средний расход топлива на 100км:
+                            <input type="text" id="average" name="average" value="15 литров">
+                        </label>
+                    </div>
+                    <div class="calculator__dropdown">
+                        <label for="volume">Объем бака:
+                            <input type="text" id="volume" name="volume" value="50 литров">
+                        </label>
+                        <label>Остаток топлива в баке:
+                            <input type="text" id="remainder" name="remainder" value="1/8">
+                        </label>
+                    </div>
+                </div>
+                <div class="calculator__checkbox">
+                    <label for="checkbox">Показать все заправки вдоль пути
+                        <input type="checkbox" id="checkbox" name="checkbox">
+                    </label>
+                    <p>По ним не будет известна стоимость дозаправки, только фирма и стоимость топлива</p>
+                </div>
+                <p class="calculator__push">
+                    Временно стоимость поездки рассчитывается с учётом цены только 95-ого бензина
+                </p>
+                <div class="calculator__submit">
+                    <input type="submit" value="Рассчитать стоимость поездки">
+                </div>
+            </form>
             <img src="assets/map.png" alt="map">
         </div>
     </div>

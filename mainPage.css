@@ -170,20 +170,52 @@ body {
   background: #ffffff; }
 
 .calculator__form {
-  width: 470px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  gap: 10px;
-  margin: 20px 60px 38px 38px; }
-  .calculator__form label {
+  width: 470px;
+  margin: 20px 60px 38px 38px;
+  gap: 23px; }
+
+.calculator__menu {
+  display: flex;
+  justify-content: normal;
+  align-items: normal;
+  flex-direction: column;
+  gap: 10px; }
+
+.calculator__dropdown {
+  display: flex;
+  justify-content: normal;
+  align-items: normal;
+  width: 300px;
+  gap: 10px; }
+  .calculator__dropdown label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    font-variant-numeric: lining-nums proportional-nums;
     font-size: 12px;
     font-weight: 400;
-    line-height: 120%;
-    opacity: 0.5; }
-  .calculator__form input {
-    width: 100%; }
+    color: #707070;
+    line-height: 120%; }
+  .calculator__dropdown input {
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    height: 12px;
+    padding: 17px 20px;
+    align-self: stretch;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    line-height: normal; }
+    .calculator__dropdown input:disabled {
+      background: #F5F5F5; }
+    .calculator__dropdown input:active {
+      border-color: #BF271B; }
 
 .about {
   background: #ffffff;
