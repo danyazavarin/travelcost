@@ -65,43 +65,53 @@
                 <div class="calculator__menu">
                     <div class="calculator__dropdown">
                         <label for="departure">Точка отправления:<br>
-                            <input type="text" id="departure" name="departure" value="Санкт-Петербург, 3-я ул. Строителей, 24">
+                            <input type="text" id="departure" name="departure"
+                                   value="Санкт-Петербург, 3-я ул. Строителей, 24">
+                            <img src="assets/icon_arrow.svg" alt="arrow">
                         </label>
                     </div>
                     <div class="calculator__dropdown">
                         <label for="arrival">Точка прибытия:<br>
                             <input type="text" id="arrival" name="arrival" value="Москва, 3-я ул. Строителей, 24">
+                            <img src="assets/icon_arrow.svg" alt="arrow">
                         </label>
                     </div>
                     <div class="calculator__dropdown">
                         <label for="type">Тип топлива:
                             <input type="text" id="type" name="type" placeholder="АИ-95" disabled>
+                            <img src="assets/icon_arrow.svg" alt="arrow">
                         </label>
+                    </div>
+                    <div class="calculator__dropdown">
                         <label for="average">Средний расход топлива на 100км:
                             <input type="text" id="average" name="average" value="15 литров">
+                            <img src="assets/icon_arrow.svg" alt="arrow">
                         </label>
                     </div>
                     <div class="calculator__dropdown">
                         <label for="volume">Объем бака:
                             <input type="text" id="volume" name="volume" value="50 литров">
+                            <img src="assets/icon_arrow.svg" alt="arrow">
                         </label>
+                    </div>
+                    <div class="calculator__dropdown">
                         <label>Остаток топлива в баке:
                             <input type="text" id="remainder" name="remainder" value="1/8">
+                            <img src="assets/icon_arrow.svg" alt="arrow">
                         </label>
                     </div>
                 </div>
                 <div class="calculator__checkbox">
-                    <label for="checkbox">Показать все заправки вдоль пути
-                        <input type="checkbox" id="checkbox" name="checkbox">
-                    </label>
-                    <p>По ним не будет известна стоимость дозаправки, только фирма и стоимость топлива</p>
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                    <div class="calculator__checkbox-text">
+                        <label for="checkbox">Показать все заправки вдоль пути</label>
+                        <p>По ним не будет известна стоимость дозаправки,<br> только фирма и стоимость топлива</p>
+                    </div>
                 </div>
                 <p class="calculator__push">
-                    Временно стоимость поездки рассчитывается с учётом цены только 95-ого бензина
+                    Временно стоимость поездки рассчитывается с учётом цены только<br> 95-ого бензина
                 </p>
-                <div class="calculator__submit">
-                    <input type="submit" value="Рассчитать стоимость поездки">
-                </div>
+                <button type="submit" class="calculator__submit">Рассчитать стоимость поездки</button>
             </form>
             <img src="assets/map.png" alt="map">
         </div>
